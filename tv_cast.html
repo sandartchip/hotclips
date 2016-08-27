@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+	<link rel="stylesheet" href="css/tvcast_style.css">
+
+	<style></style>
+	<title>TV CAST</title>
+</head>
+<!--
+	1. font family
+	2. 대체텍스트
+	3. 버튼 바꾸기
+	4. margin으로 바꾸기
+5. validation
+	6. 컨벤션
+7. border위치-> 그림으로
+8. 마스크의 z-index
+	9. opacity filter
+10. rolling 시키기
+11. hover했을 때 그림이 안짤리게
+12. 쓸모없는 속성(block에 div)
+13. 따로떼보기
+	14. 픽셀맞추기-sliding
+15. 픽셀맞추기- main
+16. 그거 툴팁 깨지는거
+17. background같은애들 합치기
+-->
+
+<body>
+<div class="wrap">
+	<h1 class="blind">TV CAST</h1>
+	<h2 class="page_title"><a href="#">HOT CLIPS</a></h2>
+	<div class="main_area">
+		<div class="tvcast_thumbnail">
+			<a class="img_box" href="#">
+				<img src="img/test_img1.png" width="388" height="218" alt="우주 사진">
+				<div class="timer">
+					<span class="blind">상영시간</span>12:14
+						<div class="mask"></div>
+				</div>
+				<div class="tvcast_more_btn">
+					<div class="tooltip_box">
+						<div class="tooltip_text_part elip">
+						우주 사진입니다.  스페이스 오딧세이이이이이이이이
+						</div>
+					</div>
+				</div>
+			</a>
+			<div class="info_box">
+				<a class="inner" href="#">						
+					<div class="elip"><span class="full tvcast_icon">Full</span><strong>BBC 다큐멘터리 우리의 우주 우주영상입니다우주영상입니다우주사진입니다우주사진입니다우주사진입니다</strong></div>
+				</a>
+				<span>
+					<span class="tvcast_ico_play tvcast_icon"></span><span class="blind">재생 횟수</span>
+					<span class="number">777</span>
+				</span>		
+				<span>
+					<span class="tvcast_ico_like tvcast_icon"></span><span class="blind">좋아요 횟수</span>
+					<span class="number">999</span>
+				</span>
+			</div>
+		</div>
+	</div>
+	<ul class="sliding_area">
+		<li class="tvcast_thumbnail_line">
+			<div class="tvcast_thumbnail">
+				<a class="img_box" href="#">
+					<img src="img/test_img1.png" width="194" height="109" alt="우주 사진">
+					<div class="timer">
+						<span class="blind">상영시간</span>12:14
+							<div class="mask"></div>
+					</div>
+					<div class="tvcast_more_btn">
+						<div class="tooltip_box">
+							<div class="tooltip_text_part elip">
+							우주 사진입니다. 스페이스 오딧세이 우주우주우주우주
+							</div>
+						</div>
+					</div>
+				</a>
+				<div class="info_box">
+					<a class="inner" href="#">						
+						<div class="elip"><span class="full tvcast_icon">Full</span><strong>BBC 다큐멘터리 우리의 우주 우주영상입니다우주영상입니다우주사진입니다우주사진입니다우주사진입니다</strong></div>
+					</a>
+					<span>
+						<span class="tvcast_ico_play tvcast_icon"></span><span class="blind">재생 횟수</span>
+						<span class="number">777</span>
+					</span>		
+					<span>
+						<span class="tvcast_ico_like tvcast_icon"></span><span class="blind">좋아요 횟수</span>
+						<span class="number">999</span>
+					</span>
+				</div>
+			</div>
+			<div class="tvcast_thumbnail">
+				<a class="img_box" href="#">
+					<img src="img/test_img1.png" width="194" height="109" alt="우주 사진">
+					<div class="timer">
+						<span class="blind">상영시간</span>12:14
+							<div class="mask"></div>
+					</div>
+					<div class="tvcast_more_btn">
+						<div class="tooltip_box">
+							<div class="tooltip_text_part elip">
+							우주 사진입니다.  스페이스 오딧세이이이이이이이이
+							</div>
+						</div>
+					</div>
+				</a>
+				<div class="info_box">
+					<a class="inner" href="#">						
+						<div class="elip"><span class="full tvcast_icon">Full</span><strong>BBC 다큐멘터리 우리의 우주 우주영상입니다우주영상입니다우주사진입니다우주사진입니다우주사진입니다</strong></div>
+					</a>
+					<span>
+						<span class="tvcast_ico_play tvcast_icon"></span><span class="blind">재생 횟수</span>
+						<span class="number">777</span>
+					</span>		
+					<span>
+						<span class="tvcast_ico_like tvcast_icon"></span><span class="blind">좋아요 횟수</span>
+						<span class="number">999</span>
+					</span>
+				</div>
+			</div>
+		</li>
+		<li class="tvcast_thumbnail_line">
+			<div class="tvcast_thumbnail">
+				<a class="img_box" href="#">
+					<img src="img/test_img1.png" width="194" height="109" alt="우주 사진">
+					<div class="timer">
+						<span class="blind">상영시간</span>12:14
+							<div class="mask"></div>
+					</div>
+					<div class="tvcast_more_btn">
+						<div class="tooltip_box">
+							<div class="tooltip_text_part elip">
+							우주 사진입니다.  스페이스 오딧세이이이이이이이이
+							</div>
+						</div>
+					</div>
+				</a>
+				<div class="info_box">
+					<a class="inner" href="#">						
+						<div class="elip"><span class="full tvcast_icon">Full</span><strong>BBC 다큐멘터리 우리의 우주 우주영상입니다우주영상입니다우주사진입니다우주사진입니다우주사진입니다</strong></div>
+					</a>
+					<span>
+						<span class="tvcast_ico_play tvcast_icon"></span><span class="blind">재생 횟수</span>
+						<span class="number">777</span>
+					</span>		
+					<span>
+						<span class="tvcast_ico_like tvcast_icon"></span><span class="blind">좋아요 횟수</span>
+						<span class="number">999</span>
+					</span>
+				</div>
+			</div>
+			<div class="tvcast_thumbnail">
+				<a class="img_box" href="#">
+					<img src="img/test_img1.png" width="194" height="109" alt="우주 사진">
+					<div class="timer">
+						<span class="blind">상영시간</span>12:14
+							<div class="mask"></div>
+					</div>
+					<div class="tvcast_more_btn">
+						<div class="tooltip_box">
+							<div class="tooltip_text_part elip">
+							우주 사진입니다. 스페이스 오딧세이이이이이이이이
+							</div>
+						</div>
+					</div>
+				</a>
+				<div class="info_box">
+					<a class="inner" href="#">						
+						<div class="elip"><span class="full tvcast_icon">Full</span><strong>BBC 다큐멘터리 우리의 우주 우주영상입니다우주영상입니다우주사진입니다우주사진입니다우주사진입니다</strong></div>
+					</a>
+					<span>
+						<span class="tvcast_ico_play tvcast_icon"></span><span class="blind">재생 횟수</span>
+						<span class="number">777</span>
+					</span>		
+					<span>
+						<span class="tvcast_ico_like tvcast_icon"></span><span class="blind">좋아요 횟수</span>
+						<span class="number">999</span>
+					</span>
+				</div>
+			</div>
+		</li>
+	</ul><!--end of element list-->
+	<div class="button_area">
+		<button type="button" disabled class="left disabled moving_btn" href="#">
+			<span class="blind">이전페이지 버튼 비활성화</span>
+		</a>
+		<a class="right moving_btn" href="#">
+				<span class="blind">다음페이지보기 버튼</span>	
+		</a>
+	</div>
+</div>
+</body>
+</html>

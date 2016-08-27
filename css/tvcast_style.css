@@ -1,0 +1,241 @@
+/* reset.css */
+ul, 
+li, 
+span, 
+div {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+body {
+	font-family: '돋움', 'Dotum', Sans-serif;
+	font-size: 13px;
+}
+/*end of reset.css*/
+
+.page_title {
+	font-size: 24px;
+}
+.tvcast_thumbnail .info_box .inner {
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.moving_btn {
+	width: 13px;
+	height: 23px;
+	display: inline-block;
+}
+.right:hover {
+	background: url(../img/sp_img.png) -1px 0;
+}
+.right {
+	background: url(../img/sp_img.png) -149px 0;
+	margin-left:3px;
+}
+.right.disabled {
+	background: url(../img/sp_img.png) -115px 0;
+}
+.left.moving_btn {
+	background: url(../img/sp_img.png) -68px 0;
+	margin-right: 10px;
+}
+.left:hover {
+	background: url(../img/sp_img.png) -266px 0;
+}
+.left.disabled {
+	background: url(../img/sp_img.png) -235px 0;
+}
+/*버튼 처리 끝*/
+.button_area {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.tvcast_thumbnail {	
+	width: 194px;
+	height: 198px;
+}
+.tvcast_thumbnail:hover {
+	transform: scale(1.1);
+}
+.tvcast_thumbnail {
+	transition: all .2s ease-in-out;
+}
+.tvcast_thumbnail_line {
+	float: left;
+	width: 194px;
+	height: 395px;
+	margin-right: 17px;
+	margin-bottom: 20px;
+	/*198 * 2 -1*/
+}
+.sliding_area .tvcast_thumbnail_line :last-child{
+	margin-right:0;
+}
+.rolling_btns {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.tvcast_thumbnail .img_box {
+	position: relative;
+	margin-bottom:13px;
+	display:inline-block;
+}
+.tvcast_thumbnail:hover .tvcast_more_btn {
+	display: block;
+}
+.tvcast_thumbnail:hover .timer {
+	display:none;
+}
+.tvcast_thumbnail .img_box .tvcast_more_btn:hover .tooltip_box {
+	display:block;
+	max-width:500px;
+}
+
+/* 요소들의 기본 속성 */
+.tvcast_element {
+	display:inline-block;
+}
+.tvcast_icon {
+	display:inline-block;
+}
+.blind {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+.moving_btn {
+    border: 0;
+}
+/* tvcast_thumbnail 하나하나 처리 */
+.tvcast_thumbnail .timer {
+	width:40px;
+	height:20px;	
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.tvcast_thumbnail .timer .mask {	
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	/* z-index고치쟝 ㅠㅠ 위로 오게 */
+}
+.tvcast_thumbnail .full {
+	padding: 0 8px;
+	background: gray;
+	color: #fff;
+	margin-right: 5px;
+}
+.tvcast_thumbnail .info_box {
+	font-size:14px;
+	margin-bottom: 8px;
+}
+.sliding_area {
+	width: 405px; /* 194 * 2 - 1*(가로갯수-1)  + 17 * (가로갯수-1)*/
+	width: 422px; /* 194 * 2 - 1*(가로갯수-1)  + 17 * (가로갯수-1)*/
+	overflow: hidden;
+	/*왜 last child에 margin 0 안되냐*/
+}
+.sliding_area .tvcast_thumbnail .info_box .elip {
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	max-width: 194px;
+}
+.main_area .tvcast_thumbnail .info_box .elip {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 388px;
+}
+.main_area {
+	width: 388px;
+	height: 396px;
+	margin-right: 17px;
+	float:left;
+}
+/* sprite image */
+.tvcast_more_btn {
+	background: url(../img/sp_img.png) -186px 0px;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	bottom: 10px;	
+	right: 10px;
+	display: none;
+}
+.tvcast_ico_like {
+	background: url(../img/sp_img.png) -64px -50px;
+	width: 16px;
+	height: 14px;
+	margin-right: 3px;
+}
+.tvcast_ico_play {
+	background: url(../img/sp_img.png) -110px -51px;
+	width: 10px;
+	height: 13px;
+	margin: 0 3px;
+}
+.info_box .number {
+	padding-right: 10px;
+	/*padding-right하니까 왜 안돼지??*/
+}
+/* 툴팁 관련*/
+.tvcast_thumbnail .tooltip_box {	
+	position: absolute;
+	right: 18px;
+	top: -35px;
+	display: none;
+}
+.tvcast_thumbnail .tooltip_text_part.elip {
+	display: inline-block;
+	background: url(../img/files/tooltip_middle_part.png) repeat-x;
+	max-width: 255px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 3px;
+	height: 37px;
+	line-height: 37px;
+	margin-left: 3px;
+}
+.tvcast_thumbnail .tooltip_text_part:before {
+	content: " ";
+	position: absolute;
+	display: inline-block;	
+	background: url(../img/sp_img.png) -2px -47px;
+	top: 0;
+	left: -2px;
+	width: 6px;
+	height: 37px;
+}
+.tvcast_thumbnail .tooltip_box .tooltip_text_part:after {
+	position: absolute;
+	top: 0;
+	left: 98%;
+	content: "";	
+	background: url(../img/sp_img.png) -30px -47px;
+	width: 16px;
+	height: 35px;
+}
