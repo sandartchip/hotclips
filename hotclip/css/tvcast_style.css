@@ -13,7 +13,7 @@ a {
 	color: #000;
 }
 body {
-	font-family: '돋움', 'Dotum', Sans-serif;
+	font-family: 'NanumGothic', Sans-serif;
 	font-size: 13px;
 }
 /*end of reset.css*/
@@ -23,7 +23,7 @@ body {
 }
 .tvcast_thumbnail .info_box .inner {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 14px;
 	margin-bottom: 10px;
 }
 .moving_btn {
@@ -36,7 +36,7 @@ body {
 }
 .right {
 	background: url(../img/sp_img.png) -149px 0;
-	margin-left:3px;
+	margin-left: 15px;
 }
 .right.disabled {
 	background: url(../img/sp_img.png) -115px 0;
@@ -55,7 +55,7 @@ body {
 .button_area {
 	position: absolute;
 	top: 10px;
-	right: 10px;
+	right: 100px;
 }
 .tvcast_thumbnail {	
 	width: 194px;
@@ -198,6 +198,7 @@ body {
 	margin: 0 3px;
 }
 .info_box .number {
+	font-size: 14px;
 	padding-right: 10px;
 	/*padding-right하니까 왜 안돼지??*/
 }
